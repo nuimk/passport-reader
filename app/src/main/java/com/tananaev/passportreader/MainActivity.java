@@ -388,6 +388,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(ResultActivity.KEY_GENDER, mrzInfo.getGender().toString());
                 intent.putExtra(ResultActivity.KEY_STATE, mrzInfo.getIssuingState());
                 intent.putExtra(ResultActivity.KEY_NATIONALITY, mrzInfo.getNationality());
+                intent.putExtra(ResultActivity.KEY_DOC_NUMBER, mrzInfo.getDocumentNumber());
 
                 if (bitmap != null) {
                     double ratio = 320.0 / bitmap.getHeight();

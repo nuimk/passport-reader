@@ -29,6 +29,7 @@ public class ResultActivity extends AppCompatActivity {
     public static final String KEY_STATE = "state";
     public static final String KEY_NATIONALITY = "nationality";
     public static final String KEY_PHOTO = "photo";
+    public static final String KEY_DOC_NUMBER = "docNumber";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class ResultActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.output_gender)).setText(getIntent().getStringExtra(KEY_GENDER));
         ((TextView) findViewById(R.id.output_state)).setText(getIntent().getStringExtra(KEY_STATE));
         ((TextView) findViewById(R.id.output_nationality)).setText(getIntent().getStringExtra(KEY_NATIONALITY));
+        ((TextView) findViewById(R.id.output_docnumber)).setText(getIntent().getStringExtra(KEY_DOC_NUMBER));
 
         if (getIntent().hasExtra(KEY_PHOTO)) {
             ((ImageView) findViewById(R.id.view_photo)).setImageBitmap((Bitmap) getIntent().getParcelableExtra(KEY_PHOTO));

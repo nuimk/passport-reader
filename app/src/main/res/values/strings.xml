@@ -16,5 +16,6 @@
     <string name="result_gender">Gender</string>
     <string name="result_state">Country</string>
     <string name="result_nationality">Nationality</string>
+    <string name="result_document_no">Document No</string>
 
 </resources>
